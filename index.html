@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
     <script type="text/javascript" src="scripts/payment.js"></script>
-	
+
 </head>
 
 <body>
@@ -28,33 +28,67 @@
 		<div class="product-main">
 			<img  src="img/cups.jpg"/>
 		</div>
-		<h2>Modern stoneware cups</h2>
-		<p>Two cups, made to order in brown colored stoneware clay and glazed with white glaze. Can be used as a cup, vase or even just to hold things around the house or office.</p>
-		<p class="price"><sup>$</sup>60<sup>.00</sup></p>
-		<p><button id="buyButton" class="buy-now" href="">Buy Now</button> or <a href="">save for later</a></p>
+		<div class="product-info">
+			<h2>Modern stoneware cups</h2>
+			<p>Two cups, made to order in brown colored stoneware clay and glazed with white glaze. Can be used as a cup, vase or even just to hold things around the house or office.</p>
+			<p class="price"><sup>$</sup>60<sup>.00</sup></p>
+			<p class="actions"><button id="buyButton" class="buy-now" href="">Buy Now</button><span> or <a href="">save for later</a></span></p>
+		</div>
 	</article>
 
 	<aside class="social-feeds">
-		<h3>Made by Shelley</h3>
-		<p class="artist-website"><a href="">Visit my website</a></p>
-		<p>I started Vitrified Studio in the spring of 2011 in my backyard in Portland, Oregan. I love simple handmade ceramics, and I want to share what I make with other people so they can enjoy it too. All of my work is simple, utilitarian wheel thrown ceramics, made of five types of stoneware or porcelain fired to cone 4-5 in an electric&nbsp;kiln.</p>
+		<div class="about-the-artist">
+			<h3>Made by Shelley</h3>
+			<p class="artist-website"><a href="">Visit my website</a></p>
+			<p>I started Vitrified Studio in the spring of 2011 in my backyard in Portland, Oregan. I love simple handmade ceramics, and I want to share what I make with other people so they can enjoy it too. All of my work is simple, utilitarian wheel thrown ceramics, made of five types of stoneware or porcelain fired to cone 4-5 in an electric&nbsp;kiln.</p>
+		</div>
 		<section class="comments">
 			<div>
 					<h4>Customer Comments</h4>
 					<p>Found on Twitter, Instagram &amp; Facebook</p>
 			</div>
-			<ul></ul>
+			<ul>
+				<li class="comment" style="background-image:url(https://pbs.twimg.com/media/BqbKU5QIYAAIw47.jpg)">
+					<a href="https://twitter.com/BrendaWatts_/status/479292872085491712" target="_blank">
+						<p>My favorite mugs&hellip; beautiful to use, lovely to look at @vitrifiedstudio LOVE THEM</p>
+						<div class="commenter"><img src="https://pbs.twimg.com/profile_images/1819887972/postcardBW_400x400.jpg" /><span class="commenter-name">Brenda Watts</span><span> on Twitter</span></div>
+					</a>
+				</li>
+				<li class="comment" style="background-image:url(https://pbs.twimg.com/media/BqcdcJPCQAA-PhP.jpg)">
+					<a href="https://twitter.com/txstarla/status/479384255672225792/photo/1" target="_blank">
+						<p>More @vitrifiedstudio beauties. Using these for coffee, tea &amp; sugar #vitrifiedstudio</p>
+						<div class="commenter"><img src="https://pbs.twimg.com/profile_images/3598346436/d4d9fd2f0e249510fa59670487d5898a_bigger.jpeg" /><span class="commenter-name">ShellO</span><span> on Twitter</span></div>
+					</a>
+				</li>
+				<li class="comment" style="background-image:url(https://pbs.twimg.com/media/BqZWF61CUAAR7HK.jpg)">
+					<a href="https://twitter.com/AnneLoCeramics/status/479165071470649344/photo/1" target="_blank">
+						<p>Just came across  @vitrifiedstudio website. beautiful pots!</p>
+						<div class="commenter"><img src="https://pbs.twimg.com/profile_images/378800000632990523/8afaefdeb6b6a16135d128b54f0af41b_bigger.jpeg" /><span class="commenter-name">Anne-Laure Cano</span><span> on Twitter</span></div>
+					</a>
+				</li>
+				<li class="comment" style="background-image:url(https://pbs.twimg.com/media/Bqcc9dLCQAAl0J-.jpg)">
+					<a href="https://twitter.com/txstarla/status/479383728225923072/photo/1" target="_blank">
+						<p>Posting my @vitrifiedstudio treasures. Lovely salt+pepper cellars. #vitrifiedstudio</p>
+						<div class="commenter"><img src="https://pbs.twimg.com/profile_images/3598346436/d4d9fd2f0e249510fa59670487d5898a_bigger.jpeg" /><span class="commenter-name">ShellO</span><span> on Twitter</span></div>
+					</a>
+				</li>
+			</ul>
 		</section>
 	</aside>
 	<footer class="main">
 		<p>&copy; 2014 Shelley Martin</p>
 		<p class="powered-by"><span>Powered by</span> Turf</p>
 	</footer>
+
+
+
+
+
         <section id="paymentPopup" class="popupWrapper">
      <div class="popupContent">
       <article class="grid-wrap">
         <div class="grid-col bp1-col-two-fifths">
-          <img src="img/cups.jpg">
+          <img class="product-image" src="img/cups.jpg">
         </div>
         <div class="grid-col bp1-col-two-thirds">
          <div class="grid-col-nopad col-full itemDetails">
@@ -68,6 +102,8 @@
           </div>
        </div>
       </div>
+
+
       <div class="grid-col col-full">
        <div class="formContent">
         <h3>Details</h3>
@@ -109,7 +145,7 @@
             <div class="grid-col popupFooter">
              <div class="grid-col bp1-col-three-quarters paypalLogo">
               <p>pay with</p>
-              <!-- PayPal Logo --><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1000, height=600'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo"></a><!-- PayPal Logo -->
+              <!-- PayPal Logo --><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1000, height=600'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo" class="paypal-logo"></a><!-- PayPal Logo -->
               </div>
               <div class="grid-col bp1-col-one-quarter rightSection">
                <p>
@@ -120,7 +156,7 @@
          </div>
        </div>
     </article>
-   </div>   
+   </div>
   </section>
 	<script src="jquery.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
