@@ -99,7 +99,7 @@
 					color:rgba(0,0,0,0.4);
 				}
 
-				button.buy-now {
+				button.buy-now, input.button {
 					font-family:"avenir";
 					font-size:1em;
 					display:inline-block;
@@ -427,16 +427,15 @@ section .popupContent {
   -moz-box-shadow:    0px 0px 20px 0px rgba(151, 151, 151, 0.3);
   box-shadow:         0px 0px 20px 0px rgba(151, 151, 151, 0.3);
 }
-
 section .popupContent .product-image {
 	width:100%;
 }
-
 .itemDetails{
   padding:20px 0;
 }
-
-
+.itemDetails .price{
+	margin-top:70%;
+}
 h2.popupTitle{
 	font-family:'baskerville';
 	font-style:italic;
@@ -445,9 +444,7 @@ h2.popupTitle{
 	margin-bottom:12px;
 	margin-top:24px;
 	color:rgba(0, 0, 0, 0.6);
-	}
-.itemDetails .price{margin-top:70%;}
-
+	}	
 .formContent{
 	background:#fff;
 	min-height:100px;
@@ -468,8 +465,15 @@ h2.popupTitle{
 	content:"1";
 }
 
-.formContainer{width:70%;margin:0 auto;}
-.formContainer label{font-size:0.8em;display:inline-block;width:20%;}
+.formContainer{
+	width:70%;
+	margin:0 auto;
+}
+.formContainer label{
+	font-size:0.8em;
+	display:inline-block;
+	width:20%;
+}
 .formContainer input{
 	background-color: #fff;
     border: 1px solid #979797;
@@ -477,39 +481,68 @@ h2.popupTitle{
     padding: 0.5em 0.75em;
 	display:inline-block;
 	width:70%;
+	margin:1%;
 }
 .formContainer input:focus{
 	box-shadow:0 0 5px #ededed inset;
 }
-input.error{border:1px solid #AF2A2B;}
+input.error{
+	border:1px solid #AF2A2B;
+}
 
-#message-results{font-size:0.8em;font-style:italic;}
-#message-results .error{color:#AF2A2B;padding-left:25px;}
+#message-results{
+	font-size:0.8em;
+	font-style:italic;
+}
+#message-results .error{
+	color:#AF2A2B;
+	padding-left:25px;
+}
 
-.popupFooter{padding-top:24px;}
-.rightSection p{text-align:right;}
-.rightSection p  span{display:block;}
-.paypalLogo{text-align:right;margin-top:5px;}
-.paypalLogo p{margin:0;}
-
+.popupFooter{
+	padding-top:24px;
+}
+.rightSection p{
+	text-align:right;
+}
+.rightSection p  span{
+	display:block;
+}
+.paypalLogo{
+	text-align:right;
+	margin-top:5px;
+}
+.paypalLogo p{
+	margin:0;
+}
 .paypalLogo img {
 	display:inline-block;
 }
+.closeBtn{
+	color:rgba(0,0,0,0.4);
+	text-decoration:underline;
+	background:transparent;
+	border:0;
+	padding:0;
+	font-size:16px;
+	cursor:pointer;
+}
 
-			/*Grid Styles*/
-			.align {
-    -moz-box-align: center;
-    -moz-box-pack: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+/*Grid Styles*/
+.align {
+-moz-box-align: center;
+-moz-box-pack: center;
+align-items: center;
+display: flex;
+justify-content: center;
+width: 100%;
 }
 
 .grid-wrap {
   margin-left: -3em;
   overflow: hidden;
-  clear: both; }
+  clear: both; 
+}
 
 .grid-col {
   float: left;
@@ -517,14 +550,16 @@ input.error{border:1px solid #AF2A2B;}
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+ }
 
 .grid-col-nopad {
   float: left;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 .col-full{
   width: 100%; }
@@ -572,6 +607,11 @@ input.error{border:1px solid #AF2A2B;}
 }
 
 @media only screen and (max-width: 40em) {
-  .itemDetails{padding:20px 10px;}
-  .formContainer{width:100%;margin-top:20px;}
+  .itemDetails{
+	  padding:20px 10px;
+	  }
+  .formContainer{
+	  width:100%;
+	  margin-top:20px;
+	  }
 }
