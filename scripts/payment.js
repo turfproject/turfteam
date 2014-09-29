@@ -45,13 +45,9 @@ $(document).ready(function() {
                 if(response.type == 'error'){ //load json data from server and output message    
                     output = '<div class="error">'+response.text+'</div>';
                 }else{
-					document.customerDetails.action = "https://www.sandbox.paypal.com/cgi-bin/webscr";
+					document.customerDetails.action = "https://www.paypal.com/cgi-bin/webscr";
        				document.customerDetails.submit();          
        				return true;
-                    //output = '<div class="success">'+response.text+'</div>';
-                    //reset values in all input fields
-                    //$("#customerDetails  input[required=true], #customerDetails textarea[required=true]").val('');
-                    //$("#customerDetails #contact_body").slideUp(); //hide form after success
                 }
                 $("#message-results").show().html(output);
 

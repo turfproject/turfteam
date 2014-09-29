@@ -434,7 +434,7 @@ section .popupContent .product-image {
   padding:20px 0;
 }
 .itemDetails .price{
-	margin-top:70%;
+	margin-top:75px;
 }
 h2.popupTitle{
 	font-family:'baskerville';
@@ -524,7 +524,7 @@ input.error{
 	background:transparent;
 	border:0;
 	padding:0;
-	font-size:16px;
+	font-size:15px;
 	cursor:pointer;
 }
 
@@ -609,6 +609,9 @@ width: 100%;
 @media only screen and (max-width: 40em) {
   .itemDetails{
 	  padding:20px 10px;
+	  }
+  .itemDetails .price{
+	  margin-left:-10px;
 	  }
   .formContainer{
 	  width:100%;
